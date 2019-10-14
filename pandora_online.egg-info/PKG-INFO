@@ -1,4 +1,4 @@
-Metadata-Version: 1.1
+Metadata-Version: 1.0
 Name: pandora-online
 Version: 0.1
 Summary: The Pandora Online Class Helper
@@ -9,7 +9,3 @@ License: MIT
 Description: Really, this class help for pro.p-on.ru requests.
 Keywords: pandora pandect
 Platform: UNKNOWN
-Classifier: Development Status :: 3 - Alpha
-Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python :: 3.6.8
-Classifier: Topic :: Utilites :: API Hepler
