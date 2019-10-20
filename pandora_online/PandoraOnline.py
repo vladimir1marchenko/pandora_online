@@ -89,3 +89,18 @@ class PandoraOnline:
             return json.loads(self.response.text)
         else:
             return None
+
+    def send_command(self,id=None,command=None):
+        """ Send some command request """
+        if(id== None or command == None):
+            raise IOError("Please enter correct id device and correct command")
+        api_url = self.api_url_base+'/devices/command'
+        headers = {'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8',
+                    'Referer': 'https://pro.p-on.ru',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/63.0.3368.107'
+                    }
+        self.response = self.session.post(api_url, headers = headers,data = {'id': id,'command':command})
+        if self.response.status_code == 200:
+            return json.loads(self.response.text)
+        else:
+            return None
