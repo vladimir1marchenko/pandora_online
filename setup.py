@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 
 setup(name='pandora_online',
-      version='0.3',
+      version='0.4',
       description='The Pandora Online Class Helper',
       long_description='Really, this class help for pro.p-on.ru requests.',
       keywords='pandora pandect',
